@@ -20,10 +20,6 @@ var ViewPagerDataSource = require('./ViewPagerDataSource');
 var ViewPager = React.createClass({
   mixins: [TimerMixin],
 
-  statics: {
-    DataSource: ViewPagerDataSource,
-  },
-
   propTypes: {
     ...View.propTypes,
     dataSource: PropTypes.instanceOf(ViewPagerDataSource).isRequired,
@@ -330,5 +326,6 @@ var styles = StyleSheet.create({
 
 module.exports = {
   __esModule: true,
-  'default': ViewPager
+  'default': ViewPager,
+  ViewPagerDataSource: ViewPagerDataSource
 };
