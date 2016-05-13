@@ -1,16 +1,14 @@
 'use strict';
 
-var React = require('react-native');
+var React = require('react');
 var {
   Dimensions,
-  Text,
   View,
-  TouchableOpacity,
   PanResponder,
   Animated,
   PropTypes,
   StyleSheet,
-} = React;
+} = require('react-native');
 
 var StaticRenderer = require('react-native/Libraries/Components/StaticRenderer');
 var TimerMixin = require('react-timer-mixin');
@@ -330,4 +328,7 @@ var styles = StyleSheet.create({
   },
 });
 
-module.exports = ViewPager;
+module.exports = {
+  __esModule: true,
+  'default': ViewPager
+};
