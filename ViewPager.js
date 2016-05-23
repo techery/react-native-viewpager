@@ -1,12 +1,11 @@
 'use strict';
 
-var React = require('react');
+var React, {PropTypes} = require('react');
 var {
   Dimensions,
   View,
   PanResponder,
   Animated,
-  PropTypes,
   StyleSheet,
 } = require('react-native');
 
