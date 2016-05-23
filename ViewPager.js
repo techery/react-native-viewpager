@@ -1,6 +1,7 @@
 'use strict';
 
-var React, {PropTypes} = require('react');
+var React = require('react');
+var PropTypes = React.PropTypes;
 var {
   Dimensions,
   View,
